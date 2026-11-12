@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -29,7 +30,7 @@ button{width:100%;padding:12px;border-radius:8px;border:none;background:#10b981;
 </style>
 </head>
 <body>
-<h1>⚽ FootAnalytic <span class="badge">v1.5</span></h1>
+<h1>⚽ FootAnalytic <span class="badge">v1.6</span></h1>
 
 <div class="card">
 <label>API-Key (API-Football):</label>
@@ -140,7 +141,7 @@ function calcMan() {
 async function api(ep) {
     const k = document.getElementById('apiKey').value.trim() || localStorage.getItem('fb_key');
     if (!k) throw new Error('Вставьте API-ключ!');
-    const cKey = 'c15_' + ep;
+    const cKey = 'c16_' + ep;
     const c = localStorage.getItem(cKey);
     if (c) {
         const p = JSON.parse(c);
